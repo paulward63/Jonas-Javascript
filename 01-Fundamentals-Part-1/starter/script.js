@@ -217,7 +217,31 @@ if (height) {
   console.log(`Height is undefined!`);
 }
 
-*/
-
 const age = 63;
 if (age === 63) console.log("You just became an old man!");
+
+*/
+
+const hasDriversLicense = true; // Variable A
+const hasGoodVision = true; // Variable B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//   console.log(`Sarah is able to drive....`);
+// } else {
+//   console.log(`Someone else should drive!....`);
+// }
+
+const isTired = false; // Vairable C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log(`Sarah is able to drive....`);
+} else {
+  console.log(`Someone else should drive!....`);
+}
