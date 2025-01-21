@@ -220,7 +220,7 @@ if (height) {
 const age = 63;
 if (age === 63) console.log("You just became an old man!");
 
-*/
+ 
 
 const hasDriversLicense = true; // Variable A
 const hasGoodVision = true; // Variable B
@@ -229,19 +229,35 @@ console.log(hasDriversLicense && hasGoodVision);
 console.log(hasDriversLicense || hasGoodVision);
 console.log(!hasDriversLicense);
 
-// const shouldDrive = hasDriversLicense && hasGoodVision;
+const shouldDrive = hasDriversLicense && hasGoodVision;
 
-// if (shouldDrive) {
-//   console.log(`Sarah is able to drive....`);
-// } else {
-//   console.log(`Someone else should drive!....`);
-// }
+if (shouldDrive) {
+console.log(`Sarah is able to drive....`);
+} else {
+console.log(`Someone else should drive!....`);
+}
 
 const isTired = false; // Vairable C
 console.log(hasDriversLicense && hasGoodVision && isTired);
-
 if (hasDriversLicense && hasGoodVision && !isTired) {
-  console.log(`Sarah is able to drive....`);
+console.log(`Sarah is able to drive....`);
 } else {
-  console.log(`Someone else should drive!....`);
+console.log(`Someone else should drive!....`);
+}
+
+*/
+
+let scoreDolphins = (97 + 112 + 101) / 3;
+let scoreKoalas = (97 + 112 + 101) / 3;
+
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas && scoreDolphins > 99) {
+  console.log("Dolphins win the trophy");
+} else if (scoreDolphins < scoreKoalas && scoreKoalas > 99) {
+  console.log("Koalas win the trophy");
+} else if (scoreDolphins && scoreKoalas > 99) {
+  console.log("Both win the trophy");
+} else {
+  console.log("no one has a score above 100 so no one wins");
 }
